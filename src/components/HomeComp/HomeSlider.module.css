@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+@import url("https://unpkg.com/swiper@7/swiper-bundle.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+
+  left: inherit;
+  bottom: 0;
+  right: 0;
+  height: 7rem;
+  width: 7rem;
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  right: 7rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--main-color);
+  color: var(--white);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 2rem;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.slide {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 60rem;
+}
+
+.content {
+  width: 85rem;
+  display: none;
+  display: inline-block;
+
+  /* display: inline-block; */
+}
+.spa {
+  display: block;
+  font-size: 2.2rem;
+  color: var(--light-white);
+  padding-bottom: 1rem;
+  animation: fadeIn 0.2s linear backwards 0.2s;
+}
+/* .btn {
+  display: inline-block;
+  background: var(--black);
+  margin-top: 1rem;
+  color: var(--white);
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  animation: fadeIn 0.2s linear backwards 0.6s;
+}
+.btn:hover {
+  background: var(--main-color);
+} */
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btnwhite {
+  background-color: #fff;
+  color: #777;
+}
+.btnwhite::after {
+  background-color: #fff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btnanimated {
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+.h3tag {
+  font-size: 6vw;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: var(--text-shadow);
+  padding: 1rem 0;
+  animation: fadeIn 0.2s linear backwards 0.4s;
+}
+
+.backg1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../pictures/slide_home_1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.backg2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../pictures/slide_home_2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.meal-photo {
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+@media all and (min-width: 350px) and (max-width: 400px) {
+  .spa {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .h3tag {
+    font-size: 4vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+    animation: fadeIn 0.2s linear backwards 0.4s;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+}

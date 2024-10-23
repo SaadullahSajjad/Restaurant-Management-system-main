@@ -1,0 +1,183 @@
+.main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  padding: 3rem;
+}
+
+.box {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.313rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2rem -0.438rem rgb(0 0 0 / 10%);
+
+  text-align: center;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.hea_3 {
+  font-size: 1.5rem;
+}
+
+.para {
+  font-size: 1rem;
+}
+
+.flexer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  text-align: center;
+  width: 100%;
+}
+.heading2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+h2::before {
+  display: block;
+  height: 0.125rem;
+  background-color: #e67e22;
+  content: " ";
+  width: 9.375rem;
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.sec2para1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.sec2para2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-bottom: 1.25rem;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 0.625rem 3.125rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 12.5rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 0.938rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .flexer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .divider {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*
+@media screen and (max-width: 600px) {
+  .divider {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+  }
+  .box {
+    width: 100%;
+  }
+
+   .content {
+    text-align: center;
+    width: 80%;
+  } 
+}
+
+@media screen and (max-width: 500px) {
+  .divider {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 70%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .divider {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 60%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+*/

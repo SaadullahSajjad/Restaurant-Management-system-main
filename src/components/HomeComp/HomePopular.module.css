@@ -1,0 +1,97 @@
+.main {
+  background-color: white;
+  color: black;
+  padding-top: 1.875rem;
+  padding-bottom: 3.75rem;
+}
+.main-title {
+  position: relative;
+  margin-bottom: 1.563rem;
+}
+.center {
+  text-align: center;
+}
+
+.heading2 {
+  font-size: 3rem;
+
+  margin: 1.25rem 0 0 0;
+}
+h2::before {
+  display: block;
+  height: 0.125rem;
+  background-color: #e67e22;
+  content: " ";
+  width: 9.375rem;
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.para1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*
+-------------------Section-2-----------------------------
+*/
+
+.imagesmain {
+  background-color: #f9f7f6;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+  align-items: start;
+}
+
+.galimg {
+  width: 100%; /*To decrease size of images*/
+  height: 100%;
+  object-fit: cover; /*for this property it is mandatory to set height and width of image manually*/
+
+  display: block;
+}
+
+.gallery-item {
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+
+  opacity: 0.7;
+  height: auto;
+  transform: scale(1);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.item1 {
+  grid-row: 1 / span 7;
+  grid-column: 1 / span 4;
+}
+.item2 {
+  grid-row: 1 / span 3;
+  grid-column: 5 / span 2;
+}
+.item3 {
+  grid-row: 1 / span 3;
+  grid-column: 7 / span 2;
+}
+
+.item4 {
+  grid-row: 3 / span 2;
+  grid-column: 5 / span 4;
+}
+.item5 {
+  grid-row: 5 / span 2;
+  grid-column: 1 / span 4;
+}
+
+.item6 {
+  grid-row: 5 / span 2;
+  grid-column: 5 / span 4;
+}
